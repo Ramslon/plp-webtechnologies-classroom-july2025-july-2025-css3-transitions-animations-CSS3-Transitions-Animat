@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Transitions & Animations Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS3 Transitions & Animations + JavaScript Functions</h1>
+    <!-- Part 1: CSS3 Transitions and Animations -->
+    <section id="css-animations">
+        <h2>Part 1: CSS3 Transitions & Animations</h2>
+        <button class="animated-btn">Hover Me!</button>
+        <div class="fade-box">I fade in/out</div>
+        <div class="slide-box">I slide in/out</div>
+    </section>
+
+    <!-- Part 2: JavaScript Functions -->
+    <section id="js-functions">
+        <h2>Part 2: JavaScript Functions</h2>
+        <button onclick="showScopeDemo()">Show Scope Demo</button>
+        <div id="scope-output"></div>
+        <button onclick="calculateAndShow(5, 3)">Calculate 5 + 3</button>
+        <div id="calc-output"></div>
+    </section>
+
+    <!-- Part 3: Combining CSS & JS -->
+    <section id="combine">
+        <h2>Part 3: Combining CSS & JS</h2>
+        <button onclick="animateBox()">Animate the Box</button>
+        <div id="js-animated-box" class="box">Animated by JS</div>
+        <button onclick="toggleModal()">Show Modal</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span onclick="toggleModal()" class="close">&times;</span>
+                <p>This modal slides and fades in/out!</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
